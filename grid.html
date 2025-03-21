@@ -6,12 +6,20 @@
     <title>Document</title>
 </head>
 <style>
-    .grid_container{
+    .content{
         display:grid;
         border: 2px darkgreen;
         border-style: dashed;
+        grid-template-columns: repeat(autofill,minmax(60px,1fr));
+        grid-template-rows: repeat(3,1fr);
+        gap: 1rem;
     }
     
+    .iten{
+        height: .3rem;
+        border: 1px red;
+        padding: .5rem;
+    }
 </style>
 <body>
     <div class="content">
